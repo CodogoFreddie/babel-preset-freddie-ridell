@@ -19,7 +19,7 @@ module.exports = {
 	],
 	plugins: [
 		"transform-class-properties",
-		"transform-decorators-legacy"
+		"transform-decorators-legacy",
 		[
 			"transform-runtime",
 			{
