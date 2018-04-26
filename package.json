@@ -1,0 +1,27 @@
+{
+  "name": "babel-preset-freddie-ridell",
+  "version": "0.0.0-development",
+  "description": "my babel presets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodogoFreddie/babel-preset-freddie-ridell.git"
+  },
+  "keywords": [
+    "babel",
+    "preset"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodogoFreddie/babel-preset-freddie-ridell/issues"
+  },
+  "homepage": "https://github.com/CodogoFreddie/babel-preset-freddie-ridell#readme",
+  "devDependencies": {
+    "semantic-release": "^15.1.7"
+  }
+}
