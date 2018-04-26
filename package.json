@@ -1,6 +1,6 @@
 {
 	"name": "babel-preset-freddie-ridell",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "my babel presets",
 	"main": "index.js",
 	"prettier": {
@@ -13,18 +13,18 @@
 	},
 	"repository": {
 		"type": "git",
-		"url":
-			"https://github.com/CodogoFreddie/babel-preset-freddie-ridell.git"
+		"url": "https://github.com/CodogoFreddie/babel-preset-freddie-ridell.git"
 	},
-	"keywords": ["babel", "preset"],
+	"keywords": [
+		"babel",
+		"preset"
+	],
 	"author": "",
 	"license": "ISC",
 	"bugs": {
-		"url":
-			"https://github.com/CodogoFreddie/babel-preset-freddie-ridell/issues"
+		"url": "https://github.com/CodogoFreddie/babel-preset-freddie-ridell/issues"
 	},
-	"homepage":
-		"https://github.com/CodogoFreddie/babel-preset-freddie-ridell#readme",
+	"homepage": "https://github.com/CodogoFreddie/babel-preset-freddie-ridell#readme",
 	"dependencies": {
 		"babel-plugin-transform-class-properties": "^6.24.1",
 		"babel-plugin-transform-runtime": "^6.23.0",
