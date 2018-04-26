@@ -5,8 +5,6 @@ const targets = {
 
 module.exports = {
 	presets: [
-		"stage-3",
-		"react",
 		[
 			"env",
 			{
@@ -16,6 +14,8 @@ module.exports = {
 					: "commonjs",
 			},
 		],
+		"stage-3",
+		"react",
 	],
 	plugins: [
 		"transform-class-properties",
