@@ -1,0 +1,1 @@
+# babel-preset-freddie-ridell
