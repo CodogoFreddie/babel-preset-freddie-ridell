@@ -11,7 +11,7 @@ module.exports = {
 			"env",
 			{
 				targets,
-				modules: (process.env.BABEL_OPTIONS || "").contains("webpack")
+				modules: (process.env.BABEL_OPTIONS || "").includes("webpack")
 					? false
 					: "commonjs",
 			},
