@@ -1,6 +1,6 @@
 {
 	"name": "babel-preset-freddie-ridell",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "my babel presets",
 	"main": "index.js",
 	"prettier": {
