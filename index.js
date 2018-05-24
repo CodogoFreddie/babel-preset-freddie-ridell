@@ -21,6 +21,12 @@ module.exports = {
 		"transform-class-properties",
 		"transform-decorators-legacy",
 		[
+			"ramda",
+			{
+				useES: true,
+			},
+		],
+		[
 			"transform-runtime",
 			{
 				polyfill: false,
