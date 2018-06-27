@@ -23,7 +23,7 @@ module.exports = {
 		[
 			"ramda",
 			{
-				useES: true,
+				useES: false,
 			},
 		],
 		[
