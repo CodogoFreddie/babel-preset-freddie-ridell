@@ -1,6 +1,11 @@
 const targets = {
-	browsers: "> 1%",
-	node: "current",
+	browsers: [
+		">1%",
+		"not ie 11",
+		"not op_mini all",
+		"maintained node versions",
+	],
+	node: true,
 };
 
 /*
