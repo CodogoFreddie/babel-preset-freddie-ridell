@@ -4,7 +4,8 @@
 	"description": "my babel presets",
 	"main": "lib.js",
 	"scripts": {
-		"build": "babel index.js -o lib.js"
+		"build": "NODE_ENV=production MINIFY=* babel index.js -o lib.js",
+		"help": "BABEL_HELP=* babel index.js -o /dev/null"
 	},
 	"prettier": {
 		"useTabs": true,
