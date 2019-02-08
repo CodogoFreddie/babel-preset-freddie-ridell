@@ -1,6 +1,6 @@
 {
 	"name": "@freddieridell/babel-preset",
-	"version": "0.0.2",
+	"version": "0.1.0",
 	"description": "my babel presets",
 	"main": "lib.js",
 	"scripts": {
