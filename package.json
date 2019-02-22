@@ -1,6 +1,6 @@
 {
 	"name": "@freddieridell/babel-preset",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "my babel presets",
 	"main": "lib.js",
 	"scripts": {
@@ -37,7 +37,7 @@
 		"babel-plugin-ramda": "^2.0.0",
 		"babel-preset-minify": "^0.5.0"
 	},
-	"peerDependencies":{
+	"peerDependencies": {
 		"@babel/runtime": "^7.3.1"
 	},
 	"devDependencies": {
