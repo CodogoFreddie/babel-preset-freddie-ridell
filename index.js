@@ -31,7 +31,7 @@ module.exports = (api, { ramda, ramdaUseEs, emotion, modules } = {}) => {
 			require("@babel/preset-flow").default,
 			process.env.NODE_ENV === "production" &&
 				process.env.MINIFY &&
-				require("babel-preset-minify").default,
+				require("babel-preset-minify"),
 			[
 				require("@babel/preset-env").default,
 				{
