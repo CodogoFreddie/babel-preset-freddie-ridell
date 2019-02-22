@@ -8,22 +8,12 @@ const targets = {
 	node: true,
 };
 
-/*
- * options:
- *     ramdaUseEs: should ramda use its es imports
- *     emotion: should we use emotions
- *     modules: how should env package its modules
- *
- * env vars:
- *     MINIFY = true | false
- *     NODE_ENV = "production" | "develop" | "test" 
- */
-
-module.exports = (_, { ramdaUseEs, emotion, modules }) => {
+module.exports = (api, { ramda, ramdaUseEs, emotion, modules } = {}) => {
 	if (process.env.BABEL_HELP) {
 		console.log(`
 @freddieridell/babel-preset:
-    options:
+	options:
+		ramda: should we use ramda at all?
         ramdaUseEs: should ramda use its es imports
         emotion: should we use emotions
         modules: how should env package its modules
@@ -37,13 +27,13 @@ module.exports = (_, { ramdaUseEs, emotion, modules }) => {
 	return {
 		comments: !process.env.NODE_ENV === "production" && process.env.MINIFY,
 		presets: [
-			"@babel/react",
-			"@babel/flow",
+			require("@babel/preset-react").default,
+			require("@babel/preset-flow").default,
 			process.env.NODE_ENV === "production" &&
 				process.env.MINIFY &&
-				"minify",
+				require("babel-preset-minify").default,
 			[
-				"@babel/env",
+				require("@babel/preset-env").default,
 				{
 					targets,
 					modules,
@@ -51,11 +41,11 @@ module.exports = (_, { ramdaUseEs, emotion, modules }) => {
 			],
 		].filter(Boolean),
 		plugins: [
-			"preval",
-			emotion && "emotion",
-			["ramda", { useEs: Boolean(ramdaUseEs) }],
+			require("babel-plugin-preval"),
+			emotion && require("babel-plugin-emotion").default,
+			ramda && [require("babel-plugin-ramda").default, { useEs: Boolean(ramdaUseEs) }],
 			[
-				"@babel/plugin-transform-runtime",
+				require("@babel/plugin-transform-runtime").default,
 				{
 					corejs: false,
 					helpers: true,
